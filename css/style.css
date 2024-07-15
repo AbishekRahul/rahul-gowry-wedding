@@ -469,6 +469,7 @@ body {
 	background-color: #eee;
 	border-radius: 20px;
 	font-size: 16px;
+	margin-bottom: 20px; /* Add margin-bottom to create space */
 }
 
 .venue {
@@ -546,7 +547,7 @@ body {
         text-align: center; /* Center align the content */
 		padding: 50px 150px;
 		background-color: #fff; /* Matches Sonali's site background color */
-		color: #333; /* Dark text color */
+		color: #674ea7; /* Dark text color */
     }
 .gallery {
         display: grid; /* Use CSS Grid for the gallery */
@@ -588,13 +589,14 @@ body {
 	padding: 10px; /* Adjust padding as needed */
     /* position: fixed; */
     left: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+	flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -612,6 +614,10 @@ body {
 	margin: 0; /* Remove default margin */
 }
 
+hr.style_section {
+	border: 1px solid #263238;
+  }
+  
 .footer-right a {
     margin-left: 20px;
     text-decoration: none;
@@ -660,8 +666,10 @@ a {
 
 .actions {
 	display: flex;
+	justify-content: center; /* Center items horizontally */
 	font-size: 12px;
 	letter-spacing: 0pt;
+	margin-bottom: 24px;
 }
 
 .pulse2 {
@@ -751,7 +759,7 @@ a {
   
   .couples-title {
 	font-family: "Sacramento", cursive;
-	color: #f14e95;
+	color: #674ea7;
 	font-weight: bold;
 	font-size: 70px;
   }
@@ -957,6 +965,9 @@ a {
 	/* amounts and words */
   }
   
+  .violet-text {
+    color: #674ea7 !important;
+}
   .simply-countdown > .simply-section .simply-amount {
 	font-size: 30px;
 	/* amounts */
@@ -1321,6 +1332,12 @@ a {
   }
   /* time line end */
   
+  .card_title {
+	padding: 10px;
+	background-color: black;
+	color: #674ea7;
+  }
+
   /* Events start */
   .main-events-title {
 	font-family: "Cabin", sans-serif;

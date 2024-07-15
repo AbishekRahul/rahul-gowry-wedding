@@ -1,6 +1,3 @@
-/**
- * @author Vinit Shahdeo <vinitshahdeo@gmail.com>
- */
 (function ($) {
     "use strict";
       $('.sakura-falling').sakura();
@@ -20,10 +17,6 @@
  * Listen here: https://youtu.be/X0MDALpV29s
  *
  */
-$(document).on('click', function(){
-    document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana');
-});
 
 // Set the date we're counting down to
 var countDownDate = new Date("Sep 16, 2024 09:00:00").getTime();
@@ -85,11 +78,4 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 29th Nov, 2020!', styles);
-
-console.log('%cYour presence is requested!%c\n\nRegards: Vinit Shahdeo', styles1, styles2);
-
-console.log(
-    `%cShaadi me zaroor aana!\n\n`,
-    'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
-)
+console.log('\n\n%c SAVE THE DATE: 16th Sep, 2024!', styles);
