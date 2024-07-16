@@ -62,6 +62,96 @@
         .h5-responsive {
           font-size: 1.5rem;
         }
+        audio::-webkit-media-controls {
+            display: none !important;
+        }
+
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        /* Style for the toggle switch container */
+        .toggle-switch-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        /* Style for the toggle switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        /* Style for the confirmation button */
+        .confirm-button {
+            display: block;
+            margin: 20px auto 0 auto;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .confirm-button:hover {
+            background-color: #1e88e5;
+        }
       </style>
    </head>
    <body> 
@@ -246,10 +336,46 @@ I cordially invite you and your family to
 our wedding to be held on 16th September  at Ram Seetha Hall, Rajakilpakkam, Chennai, Tamil Nadu - 600073 from 9:00 AM onwards.
 
 -->
-<audio controls autoplay>
+<audio id="background-audio" loop>
   <source src="song.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+
+<!-- Modal for toggle switch -->
+<div class="modal" id="audio-modal">
+  <div class="toggle-switch-container">
+      <label class="switch">
+          <input type="checkbox" id="audio-toggle">
+          <span class="slider"></span>
+      </label>
+      <span>Play Music</span>
+      <button class="confirm-button" id="confirm-button">Confirm</button>
+  </div>
+</div>
+
+<script>
+  // JavaScript to control the audio playback based on the toggle switch
+  const audio = document.getElementById('background-audio');
+  const audioToggle = document.getElementById('audio-toggle');
+  const audioModal = document.getElementById('audio-modal');
+  const confirmButton = document.getElementById('confirm-button');
+
+  // Event listener for the confirm button
+  confirmButton.addEventListener('click', function() {
+      if (audioToggle.checked) {
+          audio.play();
+      } else {
+          audio.pause();
+      }
+      // Hide the modal after selection
+      audioModal.style.display = 'none';
+  });
+
+  // Show the modal on page load
+  window.onload = function() {
+      audioModal.style.display = 'flex';
+  };
+</script>
 <footer class="footer">
    <div class="footer-container">
        <div class="footer-left">
