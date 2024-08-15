@@ -546,7 +546,7 @@ body {
 .engagement-pics {
         text-align: center; /* Center align the content */
 		padding: 50px 150px;
-		background-color: #fff; /* Matches Sonali's site background color */
+		background-color: #EAF3FB; /* Matches Sonali's site background color */
 		color: #674ea7; /* Dark text color */
     }
 .gallery {
@@ -961,7 +961,7 @@ a {
   .simply-countdown > .simply-section .simply-amount,
   .simply-countdown > .simply-section .simply-word {
 	display: block;
-	color: white;
+	color: #EAF3FB;
 	/* amounts and words */
   }
   
@@ -1021,7 +1021,7 @@ a {
   .simply-countdown > .simply-section .simply-amount,
   .simply-countdown > .simply-section .simply-word {
 	display: block;
-	color: white;
+	color: #EAF3FB;
 	/* amounts and words */
   }
   
@@ -1078,7 +1078,7 @@ a {
   .simply-countdown > .simply-section .simply-amount,
   .simply-countdown > .simply-section .simply-word {
 	display: block;
-	color: white;
+	color: #EAF3FB;
 	/* amounts and words */
   }
   
@@ -1135,7 +1135,7 @@ a {
   .simply-countdown > .simply-section .simply-amount,
   .simply-countdown > .simply-section .simply-word {
 	display: block;
-	color: white;
+	color: #EAF3FB;
 	/* amounts and words */
   }
   
@@ -1341,7 +1341,7 @@ a {
   /* Events start */
   .main-events-title {
 	font-family: "Cabin", sans-serif;
-	color: #ffffff;
+	color: #EAF3FB;
   }
   
   .main-event-icon {
@@ -1369,7 +1369,7 @@ a {
 	min-width: 300px;
 	max-width: 300px;
 	width: 100%;
-	color: #ffffff;
+	color: #EAF3FB;
 	text-align: left;
 	font-size: 15px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -1423,7 +1423,7 @@ a {
   .snip1580.hover h3,
   .snip1580:hover h5,
   .snip1580.hover h5 {
-	color: #ffffff;
+	color: #EAF3FB;
   }
   /* Gallery end */
   
